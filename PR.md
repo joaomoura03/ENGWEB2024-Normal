@@ -8,10 +8,6 @@
 4. Correr o script python `convert_dataset.py` para resolver formato do preço em caso de decimal.
 5. Executar o container que já conta com o mongo import
 
+## API
 
-
-## Frontend
-
-No `http://localhost:16001` pode ser encontrada a tabela pedida com o **número de contratos** na base de dados, sendo isso a metainformação que foi escolhida.
-
-Na página individual de um contrato é possível ver todos os campos do contrato. É possível voltar à página principal clicando no logo.
+1. Fiz as funções que estão na pasta ex1 e no ficheiro app.js e testei as no postman
