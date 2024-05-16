@@ -1,0 +1,30 @@
+//- {
+//-     "_id": 9999999999,
+//-     "nAnuncio": "",
+//-     "tipoprocedimento": "Meu tipo Custom",
+//-     "objectoContrato": "Meu objeto",
+//-     "dataPublicacao": "16/05/2024",
+//-     "dataCelebracaoContrato": "16/05/2024",
+//-     "precoContratual": 9999.99,
+//-     "prazoExecucao": 100,
+//-     "NIPC_entidade_comunicante": 199299399,
+//-     "entidade_comunicante": "Freguesia de Paranhos",
+//-     "fundamentacao": "Nenhuma "
+//- }
+
+
+extends layout
+block content
+    ul.w3-ul
+        li
+            h3.w3-h3 Identificador: #{contrato._id}
+        li Número de Anúncio: #{contrato.nAnuncio}
+        li Tipo de Procedimento: #{contrato.tipoprocedimento}
+        li Objeto do Contrato: #{contrato.objectoContrato}
+        li Data de Publicação: #{contrato.dataPublicacao}
+        li Data de Celebração do Contrato: #{contrato.dataCelebracaoContrato}
+        li Preço Contratual: #{contrato.precoContratual}
+        li Prazo de Execução: #{contrato.prazoExecucao}
+        li NIPC da Entidade Comunicante: #{contrato.NIPC_entidade_comunicante}
+        li Entidade Comunicante: #{contrato.entidade_comunicante}
+        li Fundamentação: #{contrato.fundamentacao}

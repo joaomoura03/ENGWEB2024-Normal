@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h3.w3 NIPC da Entidade: #{entidade_nipc}
+  h3.w3 Nome da Entidade: #{entidade_nome}
+
+  h3.w3 Soma dos Preços Contratuais: #{preco}
+
+  h3 Número de contratos de #{entidade_nipc}: #{contratos.length}
+  table.w3-table
+    thead
+        tr
+            th Identificador
+            th Objeto
+            th Data de Celebração
+            th Preço Contratual
+            th NIPC Entidade
+            th Entidade Comunicante
+    tbody
+        each contrato in contratos
+            tr
+                td
+                    a(href="/" + contrato._id)= contrato._id
+                td= contrato.objectoContrato
+                td= contrato.dataCelebracaoContrato
+                td= contrato.precoContratual
+                td
+                    a(href="/entidades/" + contrato.NIPC_entidade_comunicante)= contrato.NIPC_entidade_comunicante
+                td= contrato.entidade_comunicante
